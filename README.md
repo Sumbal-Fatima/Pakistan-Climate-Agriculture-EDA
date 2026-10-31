@@ -47,8 +47,8 @@ Download these and place the CSVs in `data/` as named below.
 ## Limitations
 This is exploratory work. Trend tests show that something changed, not why. Station-averaged temperature is not homogenized, record tables are small, and crop data covers only 24 years.
 
-## Interactive dashboard
-`docs/index.html` is a self-contained interactive version (hover, switch start year, choose a crop). Build it with `python scripts/make_dashboard.py`. To host it free, push the repo to GitHub, then Settings > Pages > Deploy from branch > `main` and `/docs`. Your link will be `https://<your-username>.github.io/<repo-name>/`.
+## Interactive dashboard and notebook page
+`docs/notebook.html` is a web-page copy of the full notebook with all charts, in case GitHub's notebook viewer is slow or fails on a large file. `docs/index.html` is a self-contained interactive version (hover, switch start year, choose a crop). Build it with `python scripts/make_dashboard.py`. To host it free, push the repo to GitHub, then Settings > Pages > Deploy from branch > `main` and `/docs`. Your link will be `https://<your-username>.github.io/<repo-name>/`.
 
 ## Reproduce
 ```bash
