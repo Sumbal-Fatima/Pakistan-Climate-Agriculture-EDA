@@ -6,6 +6,8 @@ An exploratory data analysis (EDA) of public climate and crop data, with a focus
 
 **Author:** Sumbal Fatima, BSc Agricultural Engineering, University of Agriculture, Faisalabad
 
+**[Interactive dashboard](https://sumbal-fatima.github.io/Pakistan-Climate-Agriculture-EDA/)** · **[Full notebook page](https://sumbal-fatima.github.io/Pakistan-Climate-Agriculture-EDA/notebook.html)** · [Notebook source](notebooks/01_eda_climate_agriculture_pakistan.ipynb)
+
 ## Questions
 1. How do record climate extremes differ between Peshawar and Gilgit?
 2. Has Pakistan's temperature changed over the long record?
@@ -48,7 +50,9 @@ Download these and place the CSVs in `data/` as named below.
 This is exploratory work. Trend tests show that something changed, not why. Station-averaged temperature is not homogenized, record tables are small, and crop data covers only 24 years.
 
 ## Interactive dashboard and notebook page
-`docs/notebook.html` is a web-page copy of the full notebook with all charts, in case GitHub's notebook viewer is slow or fails on a large file. `docs/index.html` is a self-contained interactive version (hover, switch start year, choose a crop). Build it with `python scripts/make_dashboard.py`. To host it free, push the repo to GitHub, then Settings > Pages > Deploy from branch > `main` and `/docs`. Your link will be `https://<your-username>.github.io/<repo-name>/`.
+- Dashboard: https://sumbal-fatima.github.io/Pakistan-Climate-Agriculture-EDA/ (hover, switch start year, choose a crop)
+- Full notebook with all charts: https://sumbal-fatima.github.io/Pakistan-Climate-Agriculture-EDA/notebook.html
+- Rebuild the dashboard with `python scripts/make_dashboard.py`. It is hosted free with GitHub Pages (Settings > Pages > `main` / `/docs`).
 
 ## Reproduce
 ```bash
