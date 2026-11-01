@@ -16,7 +16,7 @@ def T(main, sub=''):
 MENU = dict(x=0, xanchor='left', y=1.0, yanchor='bottom', pad=dict(t=0, b=6))
 
 # ---------- data ----------
-t = pd.read_csv('data/temp.csv'); pk = t[(t.country == 'Pakistan')].dropna(subset=['avg_temp'])
+t = pd.read_csv('data/temp.csv'); pk = t[(t.country == 'Pakistan')].dropna(subset=['avg_temp']).drop_duplicates()  # exact repeated rows would double-count readings
 d = pk.groupby('year').avg_temp.mean().reset_index(name='temp'); d = d[d.year >= 1870].reset_index(drop=True)
 y = pd.read_csv('data/yield_df.csv', index_col=0).rename(columns={'hg/ha_yield': 'yld'})
 yc = y.groupby(['Area', 'Item', 'Year'], as_index=False).agg(yld=('yld', 'first')); yc['t_ha'] = yc.yld / 10000
